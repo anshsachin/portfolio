@@ -9,7 +9,7 @@
     <!-- Load Lucide icons -->
     <script src="https://unpkg.com/lucide@latest"></script>
     <style>
-        /* Custom scrollbar styling */
+        /* Custom scrollbar styling for aesthetics */
         ::-webkit-scrollbar {
             width: 8px;
         }
@@ -26,7 +26,7 @@
         }
         /* Custom styles for the vibrant background effect */
         .hero-bg {
-            background-image: url('https://i.imgur.com/your-image-id.png'); 
+            background-image: url('images/profile.jpeg'); 
             background-size: cover;
             background-position: center;
             background-repeat: no-repeat;
@@ -40,7 +40,7 @@
             left: 0;
             width: 100%;
             height: 100%;
-            background: rgba(3, 7, 18, 0.7);
+            background: rgba(3, 7, 18, 0.85); /* Dark overlay for high readability */
             z-index: -1;
         }
     </style>
@@ -76,13 +76,13 @@
                 <a href="#projects" class="hover:text-accent transition duration-300">Projects</a>
                 <a href="#contact" class="hover:text-accent transition duration-300">Contact & Profiles</a>
             </div>
-            <!-- Mobile Menu Button -->
+            <!-- Mobile Menu Button (Hamburger) -->
             <button id="mobile-menu-button" class="md:hidden p-2 text-text-light hover:text-accent transition duration-300 focus:outline-none" aria-label="Toggle menu">
                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-menu"><line x1="4" y1="12" x2="20" y2="12"></line><line x1="4" y1="6" x2="20" y2="6"></line><line x1="4" y1="18" x2="20" y2="18"></line></svg>
             </button>
         </nav>
 
-        <!-- Mobile Menu -->
+        <!-- Mobile Menu (Hidden by default) -->
         <div id="mobile-menu" class="hidden md:hidden px-4 pb-4 transition-all duration-300 ease-in-out">
             <a href="#about" class="block py-2 text-text-light hover:text-accent border-b border-gray-800" onclick="document.getElementById('mobile-menu').classList.add('hidden')">About</a>
             <a href="#skills" class="block py-2 text-text-light hover:text-accent border-b border-gray-800" onclick="document.getElementById('mobile-menu').classList.add('hidden')">Expertise</a>
@@ -112,7 +112,7 @@
                             <span class="text-accent-light block lg:inline">Kumar Ansh</span>
                         </h1>
                         <p class="text-lg sm:text-xl text-text-subtle mb-10 max-w-2xl md:max-w-none mx-auto md:mx-0">
-                            Cybersecurity Student | Malware Analysis | Network Security | Threat Investigation
+                            Cybersecurity Enthusiast | Malware Analysis | Network Security | Cloud & Enterprise Solutions
                         </p>
                         <div class="flex flex-col sm:flex-row justify-center md:justify-start space-y-4 sm:space-y-0 sm:space-x-4">
                             <a href="#projects" class="inline-flex items-center px-6 py-3 border border-transparent text-base font-medium rounded-full shadow-sm text-primary-dark bg-accent hover:bg-accent-light transition duration-300 transform hover:scale-105">
@@ -178,7 +178,7 @@
                         <span class="px-4 py-2 bg-gray-800 text-accent rounded-full text-sm font-medium shadow-md">C++</span>
                         <span class="px-4 py-2 bg-gray-800 text-accent rounded-full text-sm font-medium shadow-md">Java</span>
                         <span class="px-4 py-2 bg-gray-800 text-accent rounded-full text-sm font-medium shadow-md">Data Structures & Algorithms</span>
-                        <span class="px-4 py-2 bg-gray-800 text-accent rounded-full text-sm font-medium shadow-md">Excel for Data Reporting</span>
+                        <span class="px-4 py-2 bg-gray-800 text-accent rounded-full text-sm font-medium shadow-md">Cloud Architecture</span>
                     </div>
                 </div>
             </div>
@@ -187,62 +187,85 @@
         <!-- Certifications Section -->
         <section id="certifications" class="py-16 md:py-24 bg-secondary-dark border-t border-b border-gray-800">
             <div class="container mx-auto px-4 sm:px-6 lg:px-8 max-w-6xl">
-                <h2 class="text-4xl font-bold text-center mb-16 text-accent">Certifications & Badges</h2>
+                <h2 class="text-4xl font-bold text-center mb-16 text-accent">Certifications & Credentials</h2>
 
-                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-                    <!-- Certificate Card 1 -->
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                    <!-- Card 1: SAP Certification -->
                     <div class="bg-primary-dark p-6 rounded-xl shadow-2xl border border-gray-700 hover:border-accent/50 transition duration-300 flex flex-col justify-between">
                         <div>
                             <div class="flex items-center justify-between mb-4">
-                                <i data-lucide="award" class="w-8 h-8 text-yellow-400"></i>
-                                <span class="text-xs font-semibold px-3 py-1 bg-gray-800 text-yellow-400 rounded-full">Completed</span>
+                                <i data-lucide="layers" class="w-8 h-8 text-accent"></i>
+                                <span class="text-xs font-semibold px-3 py-1 bg-gray-800 text-accent rounded-full">Certified</span>
                             </div>
-                            <h3 class="text-xl font-bold text-text-light mb-1">Introduction to Cybersecurity</h3>
-                            <p class="text-accent text-sm font-medium mb-3">Cisco Networking Academy</p>
+                            <h3 class="text-xl font-bold text-text-light mb-1">SAP Global Certification</h3>
+                            <p class="text-accent text-sm font-medium mb-3">SAP Enterprise Solutions</p>
                             <p class="text-text-subtle text-sm mb-4">
-                                Covered fundamentals of network defense, threat analysis, and foundational security policies.
+                                Demonstrates understanding of enterprise ERP workflows, architecture, data governance, and business technology integration.
                             </p>
                         </div>
-                        <a href="#" target="_blank" class="text-sm font-medium text-accent hover:text-accent-light flex items-center group mt-2">
-                            View Credential
+                        <a href="images/SAP2024Certification20260219-31-scmzbr.pdf" target="_blank" class="text-sm font-medium text-accent hover:text-accent-light flex items-center group mt-2">
+                            <i data-lucide="file-text" class="w-4 h-4 mr-2"></i>
+                            View Certificate (PDF)
                             <i data-lucide="external-link" class="w-4 h-4 ml-1 transition duration-300 group-hover:translate-x-1"></i>
                         </a>
                     </div>
 
-                    <!-- Certificate Card 2 -->
+                    <!-- Card 2: NPTEL / DSA Certification -->
                     <div class="bg-primary-dark p-6 rounded-xl shadow-2xl border border-gray-700 hover:border-accent/50 transition duration-300 flex flex-col justify-between">
                         <div>
                             <div class="flex items-center justify-between mb-4">
-                                <i data-lucide="award" class="w-8 h-8 text-accent"></i>
-                                <span class="text-xs font-semibold px-3 py-1 bg-gray-800 text-accent rounded-full">Completed</span>
+                                <i data-lucide="graduation-cap" class="w-8 h-8 text-yellow-400"></i>
+                                <span class="text-xs font-semibold px-3 py-1 bg-gray-800 text-yellow-400 rounded-full">Certified</span>
                             </div>
-                            <h3 class="text-xl font-bold text-text-light mb-1">Pre-Security Learning Path</h3>
-                            <p class="text-accent text-sm font-medium mb-3">TryHackMe</p>
+                            <h3 class="text-xl font-bold text-text-light mb-1">Data Structures & Algorithms</h3>
+                            <p class="text-accent text-sm font-medium mb-3">NPTEL / MOOC Certification</p>
                             <p class="text-text-subtle text-sm mb-4">
-                                Hands-on labs focusing on Linux fundamentals, networking basics, and web application security foundations.
+                                Comprehensive course covering fundamental and advanced data structures, algorithmic complexity, optimization, and problem solving.
                             </p>
                         </div>
-                        <a href="https://tryhackme.com/p/sachinyadavyahi" target="_blank" class="text-sm font-medium text-accent hover:text-accent-light flex items-center group mt-2">
-                            View Credential
+                        <a href="images/DSA%20MOOC'S.pdf" target="_blank" class="text-sm font-medium text-accent hover:text-accent-light flex items-center group mt-2">
+                            <i data-lucide="file-text" class="w-4 h-4 mr-2"></i>
+                            View Certificate (PDF)
                             <i data-lucide="external-link" class="w-4 h-4 ml-1 transition duration-300 group-hover:translate-x-1"></i>
                         </a>
                     </div>
 
-                    <!-- Certificate Card 3 -->
+                    <!-- Card 3: Cloud Computing Certification -->
                     <div class="bg-primary-dark p-6 rounded-xl shadow-2xl border border-gray-700 hover:border-accent/50 transition duration-300 flex flex-col justify-between">
                         <div>
                             <div class="flex items-center justify-between mb-4">
-                                <i data-lucide="award" class="w-8 h-8 text-purple-400"></i>
-                                <span class="text-xs font-semibold px-3 py-1 bg-gray-800 text-purple-400 rounded-full">Completed</span>
+                                <i data-lucide="cloud" class="w-8 h-8 text-blue-400"></i>
+                                <span class="text-xs font-semibold px-3 py-1 bg-gray-800 text-blue-400 rounded-full">Certified</span>
                             </div>
-                            <h3 class="text-xl font-bold text-text-light mb-1">Data Structures & Algorithms in C++</h3>
-                            <p class="text-accent text-sm font-medium mb-3">CipherSchools</p>
+                            <h3 class="text-xl font-bold text-text-light mb-1">Cloud Computing</h3>
+                            <p class="text-accent text-sm font-medium mb-3">NPTEL / Technical Certification</p>
                             <p class="text-text-subtle text-sm mb-4">
-                                In-depth study and implementation of trees, graphs, sorting algorithms, and memory management.
+                                Covers core cloud service models (IaaS, PaaS, SaaS), virtualization principles, distributed storage, and cloud infrastructure security.
                             </p>
                         </div>
-                        <a href="#" target="_blank" class="text-sm font-medium text-accent hover:text-accent-light flex items-center group mt-2">
-                            View Credential
+                        <a href="images/Cloud%20Computing%20(1).pdf" target="_blank" class="text-sm font-medium text-accent hover:text-accent-light flex items-center group mt-2">
+                            <i data-lucide="file-text" class="w-4 h-4 mr-2"></i>
+                            View Certificate (PDF)
+                            <i data-lucide="external-link" class="w-4 h-4 ml-1 transition duration-300 group-hover:translate-x-1"></i>
+                        </a>
+                    </div>
+
+                    <!-- Card 4: Generative AI & AI Track -->
+                    <div class="bg-primary-dark p-6 rounded-xl shadow-2xl border border-gray-700 hover:border-accent/50 transition duration-300 flex flex-col justify-between">
+                        <div>
+                            <div class="flex items-center justify-between mb-4">
+                                <i data-lucide="cpu" class="w-8 h-8 text-purple-400"></i>
+                                <span class="text-xs font-semibold px-3 py-1 bg-gray-800 text-purple-400 rounded-full">Certified</span>
+                            </div>
+                            <h3 class="text-xl font-bold text-text-light mb-1">Artificial Intelligence & GenAI Track</h3>
+                            <p class="text-accent text-sm font-medium mb-3">Professional Specialization</p>
+                            <p class="text-text-subtle text-sm mb-4">
+                                Complete specialization track covering Generative AI models, prompt engineering, and intelligent workflow automation.
+                            </p>
+                        </div>
+                        <a href="images/INT426(AI)%20ALL%20CERTIFICATE.pdf" target="_blank" class="text-sm font-medium text-accent hover:text-accent-light flex items-center group mt-2">
+                            <i data-lucide="file-text" class="w-4 h-4 mr-2"></i>
+                            View Certificate (PDF)
                             <i data-lucide="external-link" class="w-4 h-4 ml-1 transition duration-300 group-hover:translate-x-1"></i>
                         </a>
                     </div>
@@ -367,25 +390,25 @@
                 <div class="mt-12 pt-8 border-t border-gray-800">
                     <p class="text-text-subtle mb-6 text-xl font-semibold">Find Me Online:</p>
                     <div class="flex justify-center space-x-8">
-                        <!-- LinkedIn -->
+                        <!-- 1. LinkedIn Profile -->
                         <a href="https://www.linkedin.com/in/sachin-kumar-ansh/" target="_blank" class="text-text-light hover:text-blue-500 transition duration-300 flex flex-col items-center" aria-label="LinkedIn Profile">
                             <i data-lucide="linkedin" class="w-8 h-8 mb-1"></i>
                             <span class="text-xs font-medium">LinkedIn</span>
                         </a>
 
-                        <!-- GitHub -->
+                        <!-- 2. GitHub Profile -->
                         <a href="https://github.com/anshsachin" target="_blank" class="text-text-light hover:text-gray-400 transition duration-300 flex flex-col items-center" aria-label="GitHub">
                             <i data-lucide="github" class="w-8 h-8 mb-1"></i>
                             <span class="text-xs font-medium">GitHub</span>
                         </a>
 
-                        <!-- LeetCode -->
+                        <!-- 3. LeetCode Profile -->
                         <a href="https://leetcode.com/u/sachinkumaransh/" target="_blank" class="text-text-light hover:text-green-500 transition duration-300 flex flex-col items-center" aria-label="LeetCode Profile">
                             <i data-lucide="code" class="w-8 h-8 mb-1"></i>
                             <span class="text-xs font-medium">LeetCode</span>
                         </a>
 
-                        <!-- TryHackMe -->
+                        <!-- 4. TryHackMe Profile -->
                         <a href="https://tryhackme.com/p/sachinyadavyahi" target="_blank" class="text-text-light hover:text-red-500 transition duration-300 flex flex-col items-center" aria-label="TryHackMe Profile">
                             <i data-lucide="shield-check" class="w-8 h-8 mb-1"></i>
                             <span class="text-xs font-medium">TryHackMe</span>
